@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: ada2ee872ee49954fa26e3dfa99e7578
+timeCreated: 1474473664
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Neutra Text TF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7173a483cacd02a4ba70273060634afe, type: 3}
+  - {fileID: 12800000, guid: 74a8e8831904c05459580b426417138e, type: 3}
+  - {fileID: 12800000, guid: 5e2f39a7d8bd615409a52f2b10814af9, type: 3}
+  - {fileID: 12800000, guid: 9a519d89f10089943bdbc72768eab428, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
