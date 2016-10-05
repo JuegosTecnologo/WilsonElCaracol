@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5711CE88-9473-A0FB-41D7-A0C35B065BAD}</ProjectGuid>
+    <ProjectGuid>{DCE1A0F1-231F-BAD8-8883-C4CC806114E7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AspectUtility.cs" />
+     <Compile Include="Assets\Scripts\BotonGo.cs" />
      <Compile Include="Assets\Scripts\ControladorPersonaje.cs" />
      <Compile Include="Assets\Scripts\Destructor.cs" />
      <Compile Include="Assets\Scripts\GeneradorElementosVarios.cs" />

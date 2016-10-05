@@ -15,8 +15,12 @@ public class Destructor : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Player") {
+			NotificationCenter.DefaultCenter ().PostNotification (this, "CaracolitoMurio");
+			GameObject personaje = GameObject.Find ("Caracolito");
+			personaje.SetActive (false);
+
 			//GAME OVER (Se cayó)
-			Debug.Break ();
+			//Debug.Break ();
 
 		} else {
 			Destroy (other.gameObject);
