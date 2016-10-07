@@ -9,7 +9,14 @@ public class Puntuacion : MonoBehaviour {
 	void Start () {
 		ActualizarMarcador ();
 		NotificationCenter.DefaultCenter ().AddObserver (this, "IngrementarPuntos");
+		NotificationCenter.DefaultCenter ().AddObserver (this, "CaracolitoMurio");
+	}
 
+	void CaracolitoMurio(Notification notificacion){
+		if (puntuacion > EstadoJuego.estadoJuego.puntuacionMaxima) {
+			EstadoJuego.estadoJuego.puntuacionMaxima = puntuacion;
+			EstadoJuego.estadoJuego.Guardar ();
+		}
 	}
 
 	void IngrementarPuntos(Notification notificacion){
