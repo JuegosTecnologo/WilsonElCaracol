@@ -44,8 +44,10 @@ public class ControladorPersonaje : MonoBehaviour {
 			if(corriendo){
 				// Hacemos que salte si puede saltar
 				if(enSuelo || !dobleSalto){
+					GetComponent<AudioSource> ().Play ();
 					GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, fuerzaSalto);
 					//rigidbody2D.AddForce(new Vector2(0, fuerzaSalto));
+
 					if(!dobleSalto && !enSuelo){
 						dobleSalto = true;
 					}

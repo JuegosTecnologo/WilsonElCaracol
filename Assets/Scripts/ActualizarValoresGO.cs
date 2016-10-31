@@ -18,7 +18,10 @@ public class ActualizarValoresGO : MonoBehaviour {
 	}
 
 	void OnEnable(){
-		total.text = puntuacion.puntuacion.ToString ();
-		record.text = EstadoJuego.estadoJuego.puntuacionMaxima.ToString ();
+		
+		if (EstadoJuego.estadoJuego != null) {
+			total.text = puntuacion.puntuacion.ToString ();
+			record.text = EstadoJuego.estadoJuego.puntuacionMaxima.ToString ();
+		}
 	}
 }
